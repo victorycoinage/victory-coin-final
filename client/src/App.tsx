@@ -78,8 +78,8 @@ const LoginPage = () => {
   );
 };
 
-// 2. DASHBOARD
-const Dashboard = ({ setPage, user, doLogout }: any) => {
+// 2. LANDING PAGE / DASHBOARD (RENAMED FROM DASHBOARD TO FIX ERROR)
+const LandingPage = ({ setPage, user, doLogout }: any) => {
   // Check VIP Status (Email List OR Local Access Code)
   const [hasCode, setHasCode] = useState(localStorage.getItem('vic_pro_unlocked') === 'true');
   const isVIP = VIP_EMAILS.includes(user.email) || hasCode;
